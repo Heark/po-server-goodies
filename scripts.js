@@ -1590,8 +1590,10 @@ afterLogIn : function(src) {
     if (script.cookieBanned(src)) { //prevents errors from "no id" from the rest of the function
         return;
     }
+    sys.sendHtmlMessage(src,"<font color=red size=4><b>Welcome to Based Gods PO Server!!</b></font>");
     sys.sendMessage(src, "*** Type in /Rules to see the rules. ***");
     commandbot.sendMessage(src, "Use !commands to see the commands!");
+    sys.sendHtmlMessage(src, "<font color=red size=4><b>Make sure you view our forums here: http://fullmetal.boards.net</b></font>");
 
     if (sys.numPlayers() > maxPlayersOnline) {
         maxPlayersOnline = sys.numPlayers();
@@ -1605,7 +1607,7 @@ afterLogIn : function(src) {
     if (typeof(this.startUpTime()) == "string")
     countbot.sendMessage(src, "Server uptime is "+this.startUpTime());
     sys.sendMessage(src, "");
-
+    sys.sendHtmlAll("<b><font color = blue>"+ sys.name(src) + " Appeared!</b></font>");
     callplugins("afterLogIn", src);
 
 //   if (SESSION.users(src).android) {
