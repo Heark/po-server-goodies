@@ -56,6 +56,44 @@ exports.handleCommand = function(src, command, commandData, tar, channel) {
             normalbot.sendMessage(src, "/me was turned off.", channel);
             return;
         }
+        if (command == "catch") {
+    sys.rand(1, 8000) == 1337 ? shiny = true : shiny = false;
+    var genders = new Array("male", "female", "neutral");
+    var x = sys.rand(0, 3);
+
+    var poke_num = sys.rand(0, 650);
+
+    for (var i = 2; i >= 0; i--) {
+        if (sys.ability(sys.pokeAbility(poke_num, i, 5)) != "(No Ability)") {
+            var slot = sys.rand(0, i);
+        }
+    }
+
+    sys.sendHtmlAll("", chan);
+    sys.sendAll("====================================================", chan);
+    sys.sendAll(sys.name(src) + " has caught a random Pokemon!", chan);
+    sys.sendHtmlAll("<timestamp /><img src='pokemon:" + poke_num + "&back=false&shiny=" + shiny + "' /> (" + sys.pokemon(poke_num) + ") @ " + sys.item(sys.rand(0, 306)), chan);
+    sys.sendAll("Level: " + sys.rand(0, 101), chan);
+    sys.sendAll("Gender: " + genders[x], chan);
+    sys.sendAll("Ability: " + sys.ability(sys.pokeAbility(poke_num, slot, 5)), chan);
+    sys.sendAll("EVs: " + sys.rand(0, 253) + " HP / " + sys.rand(0, 253) + " Atk / " + sys.rand(0, 253) + " Def / " + sys.rand(0, 253) + " SAtk / " + sys.rand(0, 253) + " SDef / " + sys.rand(0, 253) + " SpD", chan);
+    sys.sendAll("DVs: " + sys.rand(0, 32) + " HP / " + sys.rand(0, 32) + " Atk / " + sys.rand(0, 32) + " Def / " + sys.rand(0, 32) + " SAtk / " + sys.rand(0, 32) + " SDef / " + sys.rand(0, 32) + " SpD", chan);
+    sys.sendAll("====================================================", chan);
+    sys.sendHtmlAll("", chan);
+}
+        if (command == "attack") {
+    if (commandData != undefined) {
+        var pokemon = sys.pokemon(sys.rand(0, 650));
+        var move = sys.move(sys.rand(0, 559));
+        if (sys.loggedIn(tar)) {
+            sys.sendAll(sys.name(src) + "'s " + pokemon + " uses " + move + " and " + commandData + " loses " + sys.rand(0, 710) + " HP!", chan);
+        } else {
+            sys.sendAll(sys.name(src) + "'s " + pokemon + " uses " + move + " but there is no target...", chan);            
+        }
+    } else {
+        sys.sendMessage(src, "You need to select a player.", chan);
+    }
+}
         if (commandData === undefined)
             return;
         if (channel == sys.channelId("Trivia") && SESSION.channels(channel).triviaon) {
