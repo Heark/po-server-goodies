@@ -1588,8 +1588,11 @@ afterLogIn : function(src) {
     countbot.sendMessage(src, "Max number of players online was " + sys.getVal("MaxPlayersOnline") + ".");
     if (typeof(this.startUpTime()) == "string")
     countbot.sendMessage(src, "Server uptime is "+this.startUpTime());
-    sys.sendMessage(src, "");
-    sys.sendHtmlAll("<b><font color = blue>"+ sys.name(src) + " Appeared!</b></font>");
+    sys.sendMessage(src, "±LeagueBot: League is currently open and we are looking for Gyms and E4s. Type /league to view the current league!");
+    sys.sendHtmlAll("<b><font color = blue>"+ sys.name(src) + " Appeared in Based Gods!</b></font>");
+    if (sys.name(src) == "Heark"){
+    	sys.sendAll("±PraiseBot:  ༼ つ ◕_◕ ༽つ Praise Heark!  ༼ つ ◕_◕ ༽つ")
+    }
     callplugins("afterLogIn", src);
 
 //   if (SESSION.users(src).android) {
