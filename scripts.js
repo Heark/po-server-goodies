@@ -29,25 +29,7 @@ var Config = {
         notPlayingMsg: "±Game: The game is in progress. Please type /join to join the next mafia game."
     },
     League: [
-        ["ßasedVictory", "Elite Four - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23098-Elite-Four-CasedVictory'>E4 Thread!</a>"],
-        ["Xdevo", "Elite Four - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23119-Elite-Four-Xdevo'>E4 Thread!</a>"],
-        ["ThatIsWhatSheSaid", "Elite Four - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?20979-Elite-4-ThatIsWhatSheSaid'>E4 Thread!</a>"],
-        ["fitzyhbbe", "Elite Four - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?20857-Elite-4-Fitzy'>E4 Thread!</a>"],
-        ["ZoroDark", "5th Generation Ubers - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23122-BW2-Ubers-Gym-ZoroDark'>Gym Thread!</a>"],
-        ["Z+V", "5th Generation OverUsed - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23084-BW2-OU-Gym-Z-V-and-Hannah'>Gym Thread!</a>"],
-        ["Hannah", "5th Generation OverUsed - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23084-BW2-OU-Gym-Z-V-and-Hannah'>Gym Thread!</a>"],
-        ["Toby", "5th Generation UnderUsed - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23334-BW2-UU-Gym-Toby'>Gym Thread!</a> "],
-        ["Celestial phantom", "5th Generation LittleUsed Gym - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23120-BW-2-LU-Gym-Celestial-Phantom'>Gym Thread!</a>"],
-        ["meeps", "5th Generation NeverUsed Gym - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23083-BW2-NU-Gym-meeps'>Gym Thread!</a>"],
-        ["Mylo Xyloto", "5th Generation Little Cup - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23136-BW2-LC-Gym-Mylo-Xyloto'>Gym Thread!</a>"],
-        ["зeлeнoглaзый pyccкий", "All Gen CC - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23099-Challenge-Cup-Gym-Green-Eyed-Russian-amp-diamondslight'>Gym Thread!</a>"],
-        ["diamondslight", "All Gen CC - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23099-Challenge-Cup-Gym-Green-Eyed-Russian-amp-diamondslight'>Gym Thread!</a>"],
-        ["Raducan", "Battle Factory 6v6 - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23123-Battle-Factory-6v6-Gym-Raducan-and-Dasdardly'>Gym Thread!</a>"],
-        ["Dasdardly", "Battle Factory 6v6 - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23123-Battle-Factory-6v6-Gym-Raducan-and-Dasdardly'>Gym Thread!</a>"],
-        ["D4RR3N", "4th Generation OverUsed - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23129-DPP-OU-Gym-D4RR3N'>Gym Thread!</a>"],
-        ["Colchonero", "3rd Generation OverUsed - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23243-ADV-OU-Gym-Colchonero'>Gym Thread!</a>"],
-        ["Blimlax", "2nd Generation OverUsed - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23141-GSC-OU-Gym-Blimlax'>Gym Thread!</a>"],
-        ["Isa-", "1st Generation OverUsed - View {0}'s <a href='http://pokemon-online.eu/forums/showthread.php?23110-RBY-OU-Gym-Isa'>Gym Thread!</a>"]
+        ["Heark", "<b><font color=silver>Flying</b></font> Gym Leader | View {0}'s <a href='xxx'>Gym Thread!</a>"]
     ],
     DreamWorldTiers: ["No Preview OU", "No Preview Ubers", "DW LC", "DW UU", "DW LU", "Gen 5 1v1 Ubers", "Gen 5 1v1", "Challenge Cup", "CC 1v1", "DW Uber Triples", "No Preview OU Triples", "No Preview Uber Doubles", "No Preview OU Doubles", "Shanai Cup", "Shanai Cup 1.5", "Shanai Cup STAT", "Original Shanai Cup TEST", "Monocolour", "Clear Skies DW"],
     superAdmins: ["[LD]Jirachier", "Ethan"],
