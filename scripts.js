@@ -1590,7 +1590,7 @@ afterLogIn : function(src) {
     if (script.cookieBanned(src)) { //prevents errors from "no id" from the rest of the function
         return;
     }
-    sys.sendHtmlMessage(src,"<font color=red size=2><b>Welcome to Based Gods PO Server!!</b></font>");
+    sys.sendHtmlMessage(src,"<font color=red size=3><b>Welcome to Based Gods PO Server!</b></font>");
     sys.sendMessage(src, "*** Type in /Rules to see the rules. ***");
     commandbot.sendMessage(src, "Use !commands to see the commands!");
     sys.sendMessage(src, "±ForumBot: Make sure you view our forums here: http://fullmetal.boards.net");
